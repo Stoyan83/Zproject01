@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   const menuIconClasses = "md:hidden text-customBlue focus:outline-none transition-transform";
-  const menuContainerClasses = `absolute top-full left-11  md:relative md:flex justify-center ${
+  const menuContainerClasses = `absolute top-full left-32 md:relative md:flex justify-center ${
     isOpen ? "block h-screen" : "hidden"
   } md:items-center bg-white py-2 md:py-4 md:bg-transparent transition-all duration-300 w-full md:w-auto`;
   const menuItemClasses =
@@ -23,7 +23,7 @@ const NavBar = () => {
   return (
     <nav className="relative flex flex-col md:flex-row justify-center items-center py-3 px-8 md:px-10">
       <div className="flex justify-between items-center w-full md:w-auto">
-        <Link href="#" className="text-customBlue mr-4 md:mr-12 lg:mr-40">
+        <Link href="#" className="text-customBlue mr-4 md:mr-12 lg:ml-14">
           <span className="font-semibold text-3xl tracking-tight">Website</span>
         </Link>
         <button onClick={toggleMenu} className={menuIconClasses}>
@@ -33,7 +33,7 @@ const NavBar = () => {
       <div className={menuContainerClasses}>
         <div className="flex flex-col md:flex-row md:items-center">
           <Link href="#" className={menuItemClasses}>
-            <span className={spanClasses}>Начало</span>
+            <span className={`${spanClasses} lg:ml-6`}>Начало</span>
           </Link>
           <Link href="#" className={menuItemClasses}>
             <span className={spanClasses}>За нас</span>
@@ -45,16 +45,18 @@ const NavBar = () => {
             <span className={spanClasses}>Цени</span>
           </Link>
           <Link href="#" className={menuItemClasses}>
-            <span className={spanClasses}>Как работи</span>
+            <span className={`${spanClasses} lg:ml-2`}>Как работи</span>
           </Link>
           <Link href="#" className={menuItemClasses}>
             <span className={`${spanClasses} md:mr-5 lg:mr-24`}>Контакти</span>
           </Link>
-          <Link href="#" className={`${menuItemClasses} lg:mr-12`}>
+          <Link href="#" className={`${menuItemClasses} lg:mr-10`}>
             <span className={spanClasses}>Профил</span>
           </Link>
+          <div className="lg:mr-32">
+            <button className={menuButtonClasses}>Заявка за пратка</button>
+          </div>
         </div>
-        <button className={menuButtonClasses}>Заявка за пратка</button>
       </div>
     </nav>
   );
