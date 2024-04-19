@@ -3,7 +3,7 @@ import Banner from "./Banner";
 
 const Header = () => {
   return (
-    <header>
+    <header className="font-space-grotesk" >
       <NavBar />
       <Banner />
     </header>

@@ -18,12 +18,6 @@
   }
 }
 
-@layer components {
-  body {
-    font-family: 'Lato', 'Space Grotesk', sans-serif;
-  }
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
