@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-w-[240px]" >{children}</body>
+      <body className="min-w-[400px]" >{children}</body>
     </html>
   );
 }
