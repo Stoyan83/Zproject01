@@ -1,11 +1,12 @@
 import Header from "./components/Header";
+import Section from "./ui/Section";
 
 
 export default function Home() {
   return (
     <>
       <Header />
-      {/* <img src='/truck.png' alt='hero-img' className='mx-auto w-8/12 h-full my-12' /> */}
+      <Section />
     </>
   );
 }

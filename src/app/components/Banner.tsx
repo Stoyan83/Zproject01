@@ -7,7 +7,7 @@ const Banner = () => {
           <span className="block whitespace-nowrap lg:mr-10 lg:mt-2 tracking-tighter">всеки клиент</span>
         </h1>
       </div>
-      <img src='/truck.png' alt='truck-img' className='mx-auto w-7/12 h-full my-16' />
+      <img src='/truck.png' alt='truck-img' className='mx-auto w-7/12 md:min-w-[800px] h-full my-16' />
     </>
   );
 };
