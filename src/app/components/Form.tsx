@@ -5,13 +5,27 @@ import EmailIcon from "../ui/icons/EmailIcon";
 export default function Form() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const phoneNumberRegex = /^[0-9]+$/;
 
   const handleClick = () => {
-    setIsModalOpen(true);
+    if (phoneNumber.trim() === "" || !phoneNumberRegex.test(phoneNumber)) {
+      setErrorMessage("Моля въведете валиден телефонен номер.");
+    } else {
+      setIsModalOpen(true);
+      setErrorMessage("");
+      setPhoneNumber("");
+    }
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const handleChange = (e) => {
+    setPhoneNumber(e.target.value);
+    setErrorMessage("");
   };
 
   return (
@@ -31,28 +45,32 @@ export default function Form() {
             <EmailIcon />
             <input
               className="p-3 w-[14rem] xl:w-[16rem] xl:p-4 outline-none border-none bg-transparent text-sm xl:text-base"
-              type="text"
               placeholder="Мобилен телефон"
               value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
+              onChange={handleChange}
             />
-            <button
-              onClick={handleClick}
-              className="p-3 xl:p-4 xl:px-8 text-customGreen bg-button-yellow xl:text-base rounded-r-xl border-0 font-bold"
-            >
-              Изпрати
-            </button>
           </div>
+          <button
+            onClick={handleClick}
+            className="p-3 xl:p-4 xl:px-8 text-customGreen bg-button-yellow xl:text-base rounded-r-xl border-0 font-bold ml-[-1px]" // Adjusted margin to align with input
+          >
+            Изпрати
+          </button>
         </div>
+        {errorMessage && (
+          <p className="text-red-500">{errorMessage}</p>
+        )}
       </div>
 
       {isModalOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg overflow-hidden shadow-lg w-80">
+          <div className="bg-white rounded-lg overflow-hidden shadow-lg w-auto">
             <div className="p-6">
-              <h2 className="text-xl font-bold mb-4">Заглавие на модала</h2>
+              <h2 className="text-xl font-bold mb-4">
+                Благодарим ви, че се свързахте с нас!
+              </h2>
               <p className="text-sm leading-relaxed">
-                Тук е текстът на модала.
+                Получихме вашата контактна информация и скоро ще ви отговорим.
               </p>
             </div>
             <div className="flex justify-end p-3 bg-gray-100">
