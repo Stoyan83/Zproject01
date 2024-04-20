@@ -12,6 +12,10 @@ const config: Config = {
     extend: {
       colors: {
         customBlue: '#01303A',
+        form: '#394649',
+        button: {
+          yellow: '#e7f874'
+        },
       },
       fontFamily: {
 				'space-grotesk': ['Space Grotesk', 'sans-serif'],

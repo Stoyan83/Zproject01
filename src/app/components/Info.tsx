@@ -1,4 +1,4 @@
-const Section = () => {
+const Info = () => {
     const commonTextClasses = "sm:text-sm lg:text-lg text-customBlue";
     const headingClasses = "font-semibold font-space-grotesk lg:text-5xl text-customBlue mb-4 lg:mb-8";
 
@@ -56,4 +56,4 @@ const Section = () => {
     );
 };
 
-export default Section;
+export default Info;
