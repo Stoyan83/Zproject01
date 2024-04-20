@@ -1,6 +1,6 @@
 const EmailIcon = () => (
   <svg
-    className="h-6 w-6 fill-current text-gray-400"
+    className="h-6 w-6 xl:h-8 xl:w-4 fill-current text-gray-400 mr-2 xl:mr-4"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
   >
