@@ -23,7 +23,7 @@ export default function Form() {
     setIsModalOpen(false);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setPhoneNumber(e.target.value);
     setErrorMessage("");
   };
@@ -52,7 +52,7 @@ export default function Form() {
           </div>
           <button
             onClick={handleClick}
-            className="p-3 xl:p-4 xl:px-8 text-customGreen bg-button-yellow xl:text-base rounded-r-xl border-0 font-bold ml-[-1px]" // Adjusted margin to align with input
+            className="p-3 xl:p-4 xl:px-8 text-customGreen bg-button-yellow hover:bg-amber-200 xl:text-base rounded-r-xl border-0 font-bold ml-[-1px]"
           >
             Изпрати
           </button>
