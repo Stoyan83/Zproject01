@@ -11,9 +11,9 @@ const NavBar = () => {
     setIsOpen(prevState => !prevState);
   };
 
-  const menuIconClasses = "md:hidden text-customBlue focus:outline-none transition-transform";
+  const menuIconClasses = "md:hidden mr-11 max-sm:mr-4 text-customBlue focus:outline-none transition-transform";
   const menuContainerClasses = `absolute top-full lg:left-32 md:relative md:flex justify-center ${
-    isOpen ? "block h-screen left-8" : "hidden"
+    isOpen ? "block h-screen ml-2" : "hidden"
   } md:items-center bg-white py-2 md:py-4 md:bg-transparent transition-all duration-300 w-full md:w-auto`;
   const menuItemClasses =
     "block md:inline-block my-2 md:my-0 md:mx-10 lg:mx-5 hover:underline transition-opacity";

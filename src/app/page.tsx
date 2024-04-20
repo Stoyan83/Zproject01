@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Section from "./ui/Section";
+import Section from "./components/Section";
 
 export default function Home() {
   return (
