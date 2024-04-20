@@ -11,7 +11,7 @@ export default function Home() {
         <Section>
           <Info />
         </Section>
-        <Section className="bg-form">
+        <Section className="bg-form mmt-16 lg:h-[600px]">
           <Form />
         </Section>
       </main>

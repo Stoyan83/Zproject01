@@ -12,14 +12,13 @@ const config: Config = {
     extend: {
       colors: {
         customBlue: '#01303A',
+        customGreen: '#083C2F',
         form: '#394649',
         button: {
           yellow: '#e7f874'
         },
       },
-      fontFamily: {
-				'space-grotesk': ['Space Grotesk', 'sans-serif'],
-			},
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
