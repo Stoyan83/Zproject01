@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <>
       <div className="text-center lg:mt-14">
-        <h1 className="font-bold tracking-tight text-customBlue lg:mr-3 md:text-6xl lg:text-7xl whitespace-nowrap mt-10 px-2">
+        <h1 className="font-bold tracking-tight text-customBlue lg:mr-3  max-sm:text-3xl sm:text-5xl md:text-6xl lg:text-7xl whitespace-nowrap mt-10 px-2">
           <span className="lg:ml-2 whitespace-nowrap">
             Гъвкави <span className="lg:ml-2 tracking-tight">решения за</span>
           </span>
@@ -19,7 +19,7 @@ const Banner = () => {
       <img
         src="/truck.png"
         alt="truck"
-        className="mx-auto w-7/12 md:min-w-[800px] h-full my-16"
+        className="mx-auto w-7/12 md:min-w-[800px] max-sm:min-w-[350px] sm:min-w-[600px] h-full my-16"
       />
     </>
   );

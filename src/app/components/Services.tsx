@@ -10,7 +10,7 @@ const Services = () => (
             src="/1.png"
             alt=""
           />
-          <p className="mb-2 mr-40 font-semibold text-2xl">Опасни товари (ADR)</p>
+          <p className="mb-2 mr-40 font-semibold max-sm:text-lg text-2xl">Опасни товари (ADR)</p>
         </div>
         <div className="text-center">
           <img
@@ -18,7 +18,7 @@ const Services = () => (
             src="/2.png"
             alt=""
           />
-          <p className="mr-40 font-semibold text-2xl">Хладилен транспорт</p>
+          <p className="mr-40 font-semibold max-sm:text-lg text-2xl">Хладилен транспорт</p>
         </div>
         <div className="text-center">
           <img
@@ -26,7 +26,7 @@ const Services = () => (
             src="/3.png"
             alt=""
           />
-          <p className="mr-24 font-semibold text-2xl">Извънгабаритни товари</p>
+          <p className="mr-24 font-semibold max-sm:text-lg text-2xl">Извънгабаритни товари</p>
         </div>
       </div>
     </div>
