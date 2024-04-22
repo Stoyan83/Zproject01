@@ -1,23 +1,25 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import CloseIcon from "../ui/icons/CloseIcon";
-import MenuIcon from "../ui/icons/MenuIcon";
+import CloseIcon from "./ui/icons/CloseIcon";
+import MenuIcon from "./ui/icons/MenuIcon";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(prevState => !prevState);
+    setIsOpen((prevState) => !prevState);
   };
 
-  const menuIconClasses = "md:hidden text-customBlue focus:outline-none transition-transform";
+  const menuIconClasses =
+    "md:hidden text-customBlue focus:outline-none transition-transform";
   const menuContainerClasses = `absolute top-full lg:left-32 md:relative md:flex justify-center ${
     isOpen ? "block h-screen ml-2" : "hidden"
   } md:items-center bg-white py-2 md:py-4 md:bg-transparent transition-all duration-300 w-full md:w-auto`;
   const menuItemClasses =
     "block md:inline-block my-2 md:my-0 md:mx-2 lg:mx-5 hover:underline transition-opacity";
-  const menuButtonClasses = "rounded-lg border-[2px] border-customBlueDark px-[14px] py-[12px] font-semibold border-customBlue bg-white text-customBlue hover:text-white hover:bg-customBlue whitespace-nowrap min-w-[150px]";
+  const menuButtonClasses =
+    "rounded-lg border-[2px] border-customBlueDark px-[14px] py-[12px] font-semibold border-customBlue bg-white text-customBlue hover:text-white hover:bg-customBlue whitespace-nowrap min-w-[150px]";
   const spanClasses = "hover:text-customBlue whitespace-nowrap";
 
   return (

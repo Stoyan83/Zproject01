@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import EmailIcon from "../ui/icons/EmailIcon";
+import EmailIcon from "./ui/icons/EmailIcon";
 
 export default function Form() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -57,9 +57,7 @@ export default function Form() {
             Изпрати
           </button>
         </div>
-        {errorMessage && (
-          <p className="text-red-500">{errorMessage}</p>
-        )}
+        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
       </div>
 
       {/* TO DO make it reusable */}
