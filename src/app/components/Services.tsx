@@ -8,25 +8,25 @@ const Services = () => (
           <img
             className="mb-2 rounded-2xl backdrop-brightness-125 hover:scale-105 transition duration-300 cursor-pointer"
             src="/1.png"
-            alt=""
+            alt="dangerous cargo"
           />
-          <p className="mb-2 mr-40 font-semibold max-sm:text-lg text-2xl">Опасни товари (ADR)</p>
+          <p className="mb-2 mr-40 font-semibold max-sm:text-base text-2xl">Опасни товари (ADR)</p>
         </div>
         <div className="text-center">
           <img
             className="mb-2 rounded-2xl backdrop-brightness-125 hover:scale-105 transition duration-300 cursor-pointer"
             src="/2.png"
-            alt=""
+            alt="temperature rquirements"
           />
-          <p className="mr-40 font-semibold max-sm:text-lg text-2xl">Хладилен транспорт</p>
+          <p className="mr-40 font-semibold max-sm:text-base text-2xl">Хладилен транспорт</p>
         </div>
         <div className="text-center">
           <img
             className="mb-2 rounded-2xl backdrop-brightness-125 hover:scale-105 transition duration-300 cursor-pointer"
             src="/3.png"
-            alt=""
+            alt="oversized cargo"
           />
-          <p className="mr-24 font-semibold max-sm:text-lg text-2xl">Извънгабаритни товари</p>
+          <p className="mr-24 max-sm:mr-32 font-semibold max-sm:text-base text-2xl">Извънгабаритни товари</p>
         </div>
       </div>
     </div>
